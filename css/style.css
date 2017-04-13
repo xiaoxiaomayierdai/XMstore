@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 14px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /*text-decoration: underline;*/
+}
+b{
+    font-weight: normal;
+}
+i{
+    font-style: normal;
+}
+input{
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearfix{*zoom:1}
+.w1226{
+    width: 1226px;
+    margin: 0 auto;
+}
+.topNav{
+    height: 40px;
+    background: #333;
+}
+.topNav ul{
+    float: left;
+}
+.topNav ul li{
+    float: left;
+    line-height: 40px;
+    height: 40px;
+}
+.topNav ul li a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.topNav ul li i{
+    color: #424242;
+    padding: 0 8px;
+}
+.topNav ul li a:hover{
+    color: #f8f8f8;
+}
+.topNav .topNavR{
+    float: right;
+}
+.topNavR .cart{
+    width: 120px;
+    height: 40px;
+    background: #424242;
+    float: right;
+    margin-left: 25px;
+    line-height: 40px;
+    position: relative;
+}
+.topNavR .cart i{
+    width: 20px;
+    height: 14px;
+    background: url("../images/icon.png") no-repeat;
+    display: inline-block;
+    margin: 0 4px 0 17px;
+    vertical-align: -2px;
+}
+.topNavR .cart span{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.topNavR .cart:hover{
+    background: #fff;
+    cursor: pointer;
+}
+.topNavR .cart:hover span{
+    color: #ff6c0a;
+}
+.topNavR .cart:hover i{
+    background-position: -25px 0;
+}
+.topNavR .cart p{
+    z-index: 3;
+    font-size: 12px;
+    color: #424242;
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 98px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    transition: height .3s;
+}
+.topNavR .cart:hover p{
+    height: 98px;background: #fff;
+
+}
+.header h1{
+    text-indent: -9999em;
+    padding-top: 22px;
+    float: left;
+}
+.header h1 a{
+    width: 55px;
+    height: 55px;
+    display: block;
+    background: #ff6700 url("../images/mi-logo.png") no-repeat center;
+}
+.header ul{
+    float: left;
+    padding-left: 189px;
+}
+.header ul>li{
+    float: left;
+    padding-right: 20px;
+    height: 100px;
+    line-height: 100px;
+}
+.header ul>li>a{
+    font-size: 16px;
+    color: #333;
+}
+.header ul>li>a:hover{
+    color: #ff6700;
+}
+.header .hide{
+    /*display: none;*/
+    /*height: 229px;*/
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    /*没有设置参照物：body 浏览器*/
+    top: 140px;
+    left: 0;
+    width: 100%;
+    /*相对参照物宽度的百分比  可视窗口的宽度*/
+    transition: height  .3s;
+
+}
+.header .hide ol{
+    padding-top: 36px ;
+}
+.header .hide ol li{
+    float: left;width: 204px;text-align: center;
+    position: relative;
+}
+.header .hide ol li .pic{
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+}
+.header .hide ol li .pic img{
+    width: 160px;
+    height:110px ;
+}
+.header .hide ol li .name{
+    font-size: 12px; color: #333;display: block;line-height: 12px;padding: 20px 0 9px 0;
+}
+.header .hide ol li span{
+    font-size: 12px;
+    color: #ff6c0a;
+    line-height: 12px;display: block;
+}
+.header .hide ol li i{
+    width: 1px;
+    height: 100px;
+    background: #e0e0e0;
+    position: absolute;top: 0;right: 0;
+}
+.header ul li:hover .hide{
+    /*display: block;*/
+    /*height: 229px;*/
+    height: 229px;
+    box-shadow: 0 5px 10px #d5d5d5;
+    border-top: 1px solid #e0e0e0;
+}
+.header .search{
+    float: right; padding-top: 25px;width: 296px;
+    position: relative;
+}
+.header .search input[type=text]{
+    width: 223px;height: 48px;border: 1px solid #e0e0e0;padding:0 10px;
+}
+.header .search input[type=text]:focus{
+    background: #fff;  z-index: 1;
+    position: relative; border-color: #ff6700;
+}
+.header .search input[type=text]:focus+input{
+    /*+下一个弟弟标签*/
+    border-color: #ff6700;
+
+}
+.header input[type=submit]{
+    width: 51px;height: 50px; border: 1px solid #e0e0e0; border-left: 0;background: #fff url("../images/icon.png") no-repeat -9px -35px;
+    /*下+15px  右+16px*/
+    vertical-align: middle;
+    /*按钮的width height 包括border*/
+}
+.header input[type=submit]:hover{
+    background-color: #ff6700 ;
+    background-position:-59px -35px ;
+    border-color: #ff6700;
+    /*-75+16   -50+15*/
+}
+.header .search:hover input{
+    border-color: #b0b0b0;
+}
+.header .search a{
+    font-size: 12px;color: #757575;width: 55px;height: 18px; background: #eee;  position: absolute;top: 41px;left: 92px;line-height: 18px;text-align: center;  transition: background .3s,color .3s}
+.header .search .tv{
+    width: 82px;left: 152px;
+}
+.header .search a:hover{
+    background: #ff6700; color: #fff;
+}
+.banner{
+    position: relative;
+}
+.banner>a>img{
+    width: 1226px;
+    height: 460px;
+}
+.banner .navList{
+    width: 234px;height: 460px;background: rgba(0,0,0,.5);
+    position: absolute;top: 0;left: 0;
+}
+.banner .navList ul{
+    padding: 20px 0;
+    position: relative;
+}
+.banner .navList ul>li{
+    height: 42px;padding-left: 29px;color: #fff;line-height: 42px;
+}
+.banner .navList ul>li>i{
+    width: 7px;height: 12px;float: right;margin:14px 24px 0 0;background: url("../images/icon.png") no-repeat -50px 0;
+}
+.banner .navList ul>li:hover{
+    background: #ff6700;cursor: pointer;
+}
+.banner .hide1{
+    display: none;
+    width: 796px;height: 458px;border-top: 1px solid #e0e0e0;box-shadow: 2px 5px 5px #d5d5d5;position: absolute;background: #fff;top: 0;left: 234px;
+}
+.banner li:hover .hide1{
+    display: block;
+}
+.banner .hide1 ol{
+    padding:21px 0 0 20px;
+    float: left;
+}
+.banner .hide1 ol li{
+    width: 234px;height: 40px; padding-bottom: 36px;line-height: 40px;
+}
+.banner .hide1 ol li img{
+    width: 40px;height: 40px;
+}
+.banner .hide1 ol li .title{
+    font-size: 12px; color: #333;padding-left: 11px;
+}
+.banner .hide1 ol li .buy{
+    color: #ff7214; font-size: 12px;width: 58px;height: 22px;border: 1px solid #ff7214;float: right; text-align: center;line-height:22px ;margin-top: 7px; transition: background .3s,color .3s;
+}
+.banner .hide1 ol li .buy:hover{
+    background: #f25807; color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
